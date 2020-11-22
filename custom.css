@@ -1,0 +1,55 @@
+/*************************************************************
+CSS-FLEX start : 
+Flex is used for simplyfy the css codes.
+It avoid unwanted float, margin, padding...etc properties
+*************************************************************/
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	height: 2000px;
+	background-color: lightblue;
+}
+
+h1{
+	margin: 0;
+}
+
+.container{
+	background-color: #CDCDCD;
+	height: 400px;
+
+	/* @To activate flex, use display property : */
+	display: flex;
+
+	/* Flex codes below */
+	flex-direction: row;          /* Other properties ->  column, row-reverse, column-reverse */
+	justify-content: space-start; /* Other properties -> center, flex-end, space-between, space-around, space-evenly */	
+	align-items: flex-start;      /* Other properties -> center, flex-end,  */
+	flex-wrap: wrap;              /* For responsive of divs : divs will automatically shows in next row when change device[tab, mob..etc]*/
+}
+
+.one,.two,.three{
+	flex:1; /* For changing divs in equal width */
+	width: 300px;
+	height: 200px;
+	background-color: orange;
+	border: 1px solid white;
+	text-align: center;
+	padding: 5px;
+}
+
+.one{
+	/*flex:1;*/
+	order: 3; /* Ordering the divs in row */
+}
+
+.two{
+	order: 2; 
+}
+
+.three{
+	order: 1;
+}
