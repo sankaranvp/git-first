@@ -108,4 +108,15 @@ var myfun22 = function () {
 
 //G] ES6 Multidimensional Arrays
         var multi = [[2,3],[4,5]]    
-        console.log(multi[0][0]+'-'+multi[0][1]+'-'+multi[1][0]+'-'+multi[1][0])  
+        console.log(multi[0][0]+'-'+multi[0][1]+'-'+multi[1][0]+'-'+multi[1][0]) 
+        
+        
+/*************************************************************************************************************/
+
+//Event example
+
+let bt = document.getElementById("btn");
+
+bt.addEventListener("click", function(){
+    alert("Clicked!!");
+})
