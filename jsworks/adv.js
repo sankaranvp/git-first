@@ -11,13 +11,15 @@
 // IIFE
 // ES6 MultiDim Array
 
+/*************************************************************************************/
+
 //1] variable declaration using let & const
     let az   = 20    
     const dc = "Ram"
 
     console.log(dc +" is " + az + "years old");
 
-
+/********************************************************************************************************************************/
 
 //2) spread Operators
     // Object
@@ -45,7 +47,7 @@
         console.log(newarr1);
         console.log(newarr2);
 
-
+/********************************************************************************************************************************/
 
 //3) rest
     // Object
@@ -72,7 +74,7 @@
         }
         addVal(10, 20, 30, 50);
 
-
+/*************************************************************************************/
 
 //4) arrow function
 
@@ -93,7 +95,7 @@
         myFunc3=c=>c*2;        
         console.log( myFunc3(25) );
 
-        
+/*************************************************************************************/        
         
 //5) forEach : allowed 3 args
     const team = [
@@ -114,42 +116,42 @@
         }
     ];
 
-    // foreach with arrow fn
+    // foreach with arrow fn : Just iterate through main array & return result.
     team.forEach( (value, index, arr)=>console.log(value.name) );
 
+/*****************************************************************************************************************/
 
-
-//6) map : allowed 3 args
+//6) map : allowed 3 args : Return copy of the actual array after iteration.
     const newTeam =  team.map( (value/*, index, arr*/)=> value.name ); // New array with names of players
     console.log(newTeam);
 
+/*******************************************************************************************************************/
 
-
-//7) filter : allowed 3 args
+//7) filter : allowed 3 args  : Filter/Find all occurence and 'return result as an array'.
     const newTeam1 =  team.filter( (value/*, index, arr*/)=> value.age === 26 ); // New array of same age players
     console.log(newTeam1);
 
+/********************************************************************************************************************************/
 
-
-//8) reduce : allowed 4 args
+//8) reduce : allowed 4 args  
     const numArr = [10, 25, 30, 5, 40, 30, 50];
     const tot =  numArr.reduce( (total, val/*, index, arr*/)=> total + val, 0 ); // New array of sum. 0 => means declare 'total=0'
     console.log(tot);
 
+/********************************************************************************************************************************/
 
-
-//9) find
+//9) find  :  Find first occurance and stop iteration then 'return result as an object'.
     const findRes = team.find( (value)=> value.name === "Suresh" ); // find data related with suresh
     console.log(findRes);
 
-
+/*********************************************************************************************************/
 
 //10) sort
     const nums   = [10, 4, 30, 5, 110, 60, 1200, 2];
     const sorted = nums.sort( (a, b)=> a - b );  // a-b : ascending, b-a:descending
     console.log(sorted);
 
-
+/********************************************************************************************************/
 
 //11) some ES10 Syntax
 
@@ -174,7 +176,7 @@
             console.log(compData.branch.bcountry);
         }
 
-
+/*****************************************************************************************************/
 
 //12) DOM Selectors
     //1) querySelector & querySelectorAll  : For replace jQuery fns
@@ -184,7 +186,7 @@
             hd[1].innerHTML = "Good Morning"; // effected to single
             hd.forEach( (data)=> (data.style.color = "#0000FF") ) // applicable to all
 
-
+/******************************************************************************************************/
 
 //13) ES6 Generators (Generator Functions) [Function with asterisk (*) & yield(return)]
     function* gen()  
@@ -199,7 +201,7 @@
     console.log(mygen.next().value);  
     console.log(mygen.next().value); 
 
-
+/********************************************************************************************/
 
 //14) Immediately Invoked Function Expression (IIFE)
     (function() { console.log("Immediately Invoked Function Expression"); })(); 
@@ -208,11 +210,11 @@
         console.log(x+'-'+y+'-'+z); 
     })(100, 200, 300);  
 
-
+/******************************************************************************************/
 
 //15) ES6 Multidimensional Arrays
     var multi = [[2,3],[4,5]]    
     console.log(multi[0][0]+'-'+multi[0][1]+'-'+multi[1][0]+'-'+multi[1][0]) 
 
 
-
+/*************************************************************************************/
