@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #056679;  /*#09b8db;*/
+}
+
+h1 {
+	margin: 0;		
+	color: #1a8b9f;
+	margin-bottom: 15px;
+}
+
+.todo-container {	
+	width: 350px;
+	/*position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);*/
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;	
+}
+
+.input-section {
+	background-color: #055565;
+	padding: 18px;
+	border-radius: 10px;
+	box-shadow: 0 7px 6px #0000003b;
+}
+
+.input-section input {
+	border-radius: 5px;
+	border: 1px solid #106879;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #055565;
+	outline: none;
+	color: #08869e;
+	font-weight: bold; 
+}
+
+input::placeholder {
+	color: #08869e;
+}
+
+ul {	
+	text-align: left;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	background-color: #055565;
+	padding: 15px;
+	border-radius: 5px;
+	color: #08869e;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 6px #00000066;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+.del {
+	text-align: right;
+	flex: 1;
+	cursor: pointer;
+	font-weight: normal;
+}

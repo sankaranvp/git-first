@@ -1,0 +1,81 @@
+
+* React is a library.
+
+* Used for designing & developing Front-End-Applications( Single Page Application[SPA] - based ).
+
+* Created by Facebook.
+
+* Simple to learn unlike Angular.
+
+* It is the 'V' of MVC.
+
+* It use JSX which is similar to HTML.
+
+
+
+Functionality base :
+====================
+
+Program written in 
+
+i)  Class component uses state
+
+ii) Functonal component uses useState ( Which is part of Hooks )
+
+
+
+
+Key Points :
+=============
+
+state       = Variables
+
+setState    = Change the state
+
+props       = Pass state to other/child components
+
+lifecycle methods, eg:- componentDidMount();
+
+Routing
+
+Hooks
+
+
+
+Benefits :
+===========
+
+You can write reusable codes
+
+Develop mobile apps with react native
+
+Easy to write & maintain
+
+Faster page switching
+
+It does not refresh
+
+
+Installation & additional steps :
+===================================
+
+* Download & Install nodeJs first.
+
+* After that to check it is working, open cmd then type to get the version of node    => npm -v
+
+* Go to the folder which you want to work in react
+
+* Open cmd & download reactJs 
+
+						=> npx create-react-app todoapp       ('todoapp' -> just a name for app)
+
+						if issues found then clear cache => npm cache clean --force
+
+						if issues persist then           => npm set registry https://registry.npmjs.org/
+
+						Then                             => npx create-react-app todoapp
+
+* After install go to 'todoapp' folder & start server    => npm start
+
+
+
