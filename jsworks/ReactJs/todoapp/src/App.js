@@ -16,4 +16,9 @@ const App = () =>{
     );
   };
 
+  /* Build after make below changes for deploy in other url/path :
+  	<Router basename="WORKING/todoapp"> :For customized path & it produced url -> http://localhost/WORKING/todoapp/ 
+	 Also add a line in package.json file => "homepage": "http://localhost/WORKING/todoapp/",
+  */
+
 export default App;
