@@ -70,3 +70,15 @@ ul li {
 	cursor: pointer;
 	font-weight: normal;
 }
+
+ul li input {
+	border-radius: 5px;
+	border: 1px solid #106879;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #055565;
+	outline: none;
+	color: #08869e;
+	font-weight: bold; 
+}
