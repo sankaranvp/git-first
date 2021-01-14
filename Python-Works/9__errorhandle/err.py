@@ -4,7 +4,7 @@ x = 10
 try:
     print(x)
     ab = ["Red", "Green", "Blue"]
-    print(x + " " + ab)
+    #print(x + " " + ab)
     print(x/0)
     
 except NameError:
