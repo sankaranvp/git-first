@@ -78,9 +78,3 @@ for y in range(0,10,2): # range(end) OR range(start, end, interval/step)
     print(y)
 else:
     print("Loop iteration is completed.")
-
-
-    
-    
-
-    
