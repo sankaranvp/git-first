@@ -20,6 +20,4 @@ allfunc = dir(math)
 
 # Module alias
 import calendar as c
-print(c.month(2020,12))
-
-
+print(c.month(2021,1))
